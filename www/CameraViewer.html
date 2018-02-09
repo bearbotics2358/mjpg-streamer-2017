@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <!-- basic.html -->
+  <title>BearBotics Video</title>
+  <meta charset = "UTF-8" />
+</head>
+<body>
+  <div style="text-align:center">
+    <h1>Camera Viewer</h1>
+
+		<img width="640" id="camImage" src="http://192.168.1.122:1185/?action=stream">
+	
+    <p>
+    </p>
+
+    <script>
+      var chooseVideo="";
+			function selectCameraGearCV() {
+			  document.getElementById("camImage").src="http://192.168.1.122:1184/?action=stream";
+			}
+			function selectCameraGearWeb() {
+			  document.getElementById("camImage").src="http://192.168.1.122:1185/?action=stream";
+			}
+			function selectCameraBoilerCV() {
+			  document.getElementById("camImage").src="http://192.168.1.122:1184/?action=stream";
+			}
+			function selectCameraBoilerWeb() {
+			  document.getElementById("camImage").src="http://192.168.1.122:1185/?action=stream";
+			}
+    </script>
+  
+    <button type="button" onclick="selectCameraGearCV()">Gear CV</button>
+    <button type="button" onclick="selectCameraGearWeb()">Gear Web</button>
+    <button type="button" onclick="selectCameraBoilerCV()">Boiler CV</button>
+    <button type="button" onclick="selectCameraBoilerWeb()">Boiler Web</button>
+  <div style="text-align:center">
+
+  <p></p>
+
+</body>
+</html>
